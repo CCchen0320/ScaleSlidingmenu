@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cbt.scaleslidingmenu.MainActivity"
+    android:background="#EEEEDC"
+    >
+    <com.cbt.scaleslidingmenu.SlidingMenu
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--导航栏-->
+        <LinearLayout
+            android:id="@+id/navigation_Container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FF84C6"
+            android:orientation="vertical">
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="导航栏"
+                android:textSize="28sp"
+                />
+        </LinearLayout>
+        <!--主面板-->
+        <LinearLayout
+            android:id="@+id/content_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FB9D67"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="主面板"
+                android:textSize="28sp" />
+        </LinearLayout>
+    </com.cbt.scaleslidingmenu.SlidingMenu>
+</RelativeLayout>
